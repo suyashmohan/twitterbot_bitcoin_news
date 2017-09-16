@@ -10,7 +10,11 @@ It runs a scheduler to search for Bitcoin and Blockchain related news every 30 m
 
 ## How to use
 You can access the tweets saved into Database through REST API
-Use `api/tweets` to access tweets. You can may provide 2 additional params :
+Use `api/tweets` to access tweets. You can provide 2 additional params :
 1. `limit` for number of results to fetch
 2. `sort` to sort the results by retweet count.
+
 E.g. `api/tweets?sort&limit=20`
+
+## Author
+Suyash Mohan [Twitter](https://twitter.com/suyash_mohan)
