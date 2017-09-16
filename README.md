@@ -17,5 +17,5 @@ Use `api/tweets` to access tweets. You can provide 2 additional params :
 E.g. `api/tweets?sort&limit=20`
 
 ## Author
-Suyash Mohan 
+Suyash Mohan <br/>
 [Twitter](https://twitter.com/suyash_mohan)
