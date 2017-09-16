@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const Promise = require('bluebird');
 
 const config = require('./config.js');
+const apiRoutes = require('./api/routes.js');
 
 // Create Express App
 const app = express();
@@ -17,6 +18,9 @@ mongoose.Promise = Promise;
 mongoose.connect(config.MONGODB.getConnectionStr(), {
     useMongoClient: true
 });
+
+// Configure the routes
+apiRoutes.use(app);
 
 // Not Found
 app.use((req, res, next) => {
