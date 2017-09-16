@@ -1,0 +1,33 @@
+{
+  "name": "twitterbot",
+  "version": "0.1.0",
+  "description": "A twitter bot that listens for bitcoin news and saves the tweet in DB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "bitcoin"
+  ],
+  "author": "Suyash Mohan",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.7.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.11",
+    "morgan": "^1.8.2"
+  }
+}
