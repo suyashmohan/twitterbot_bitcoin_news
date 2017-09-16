@@ -29,6 +29,14 @@ const start = () => {
     agenda.on('error', () => {
         console.error('Error in Scheduler');
     });
+
+    const failGracefully = () => {
+        console.log('Stopping Scheduler');
+        agenda.stop(() => process.exit(0));
+    };
+
+    process.on('SIGTERM', failGracefully);
+    process.on('SIGINT', failGracefully);
 };
 
 module.exports = {
